@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>餐廳介紹</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop muted id="bg-music">
+    <source src="music/nocturne-op9-no2.mp3" type="audio/mpeg">
+    您的瀏覽器不支援音樂播放
+</audio>
+
+<header>
+    <h1>餐廳介紹</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="restaurant.html">餐廳介紹</a></li>
+            <li><a href="menu.html">菜單資訊</a></li>
+            <li><a href="booking.html">線上訂位</a></li>
+            <li><a href="review.html">顧客評價</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="travel.html">旅遊推薦</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="faq.html">常見問題</a></li>
+        </ul>
+    </nav>
+
+<button onclick="toggleMusic()">🎵 音樂開 / 關</button>
+
+<script>
+    const music = document.getElementById("bg-music");
+
+    function toggleMusic() {
+        if (music.muted) {
+            music.muted = false;
+            music.play();
+        } else {
+            music.muted = true;
+        }
+    }
+</script>
+
+</header>
+
+<div class="container">
+    <img src="images/restaurant_space.jpg" alt="餐廳環境介紹" width="100%">
+
+    <p>
+        本示範餐廳主打永續餐飲與數位化管理，
+        結合舒適用餐空間與資訊系統輔助，
+        提供顧客高品質的餐旅體驗。
+    </p>
+</div>
+
+<footer>
+    <p>© 2026 餐旅資訊管理期末成果</p>
+</footer>
+
+</body>
+</html>
+
